@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
 
-image = mpimg.imread('I:/1.232 Pora/ALL Projects/Road Lane recognition/Try/test_images/test.jpg')
+image = mpimg.imread('test.jpg')
 
 
 
