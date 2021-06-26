@@ -12,7 +12,7 @@ import numpy as np
 import cv2
 
 
-image = mpimg.imread('I:/1.232 Pora/ALL Projects/Road Lane recognition/Try/test_images/test.jpg')
+image = mpimg.imread('test.jpg')
 gray = cv2.cvtColor(image,cv2.COLOR_RGB2GRAY)
 
 
