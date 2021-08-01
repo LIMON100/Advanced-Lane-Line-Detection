@@ -23,3 +23,7 @@ In the case of tangential distortion, the parameters become $p_1$ and $p_2$, and
 Perspectivity is the formation of an image in a picture plane of a scene viewed from a fixed point. Perspective is the phenomenon where an object appears smaller the farther away it is from the viewpoint, and parallel lines appear to converge to a point called *point at infinity*, or *ideal point*. The greater the magnitude of an object's *z*-coordinate, or distance from the camera, the smaller it will appear in the 2D image. A perspective transform maps the points in an image to different ones with a new perspective. It essentially transform the apparent *z*-coordinate of object points which in turn changes that object 2D image representation. In other words it "pushes away" points that are closer to the viewpoint, and "pushes towards" points that are far from the viewpoint.
 
 Transforming a 2D image in a bird's-eye view that will facilitate the task of interpolating the lines and determining their curvature. The process of applying a perspective transform is similar to fix image distortion, but in this case, instead of mapping object points to image points, we will map the points in a given image to different, desired, image points with a new perspective.
+
+
+
+## HLS
