@@ -1,21 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug  2 01:32:39 2021
-
-@author: limon
-"""
-
-import numpy as np
 import cv2
+import numpy as np
 
 def threshold_rel(img, lo, hi):
-    
+
     vmin = np.min(img)
     vmax = np.max(img)
     
     vlo = vmin + (vmax - vmin) * lo
     vhi = vmin + (vmax - vmin) * hi
-    
+
     return np.uint8((img >= vlo) & (img <= vhi)) * 255
 
 
@@ -24,15 +17,15 @@ def threshold_abs(img, lo, hi):
 
 
 class Thresholding:
- 
+    
     def __init__(self):
         pass
 
     def forward(self, img):
-   
+
         hls = cv2.cvtColor(img, cv2.COLOR_RGB2HLS)
         hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
-        
+
         h_channel = hls[:,:,0]
         l_channel = hls[:,:,1]
         s_channel = hls[:,:,2]

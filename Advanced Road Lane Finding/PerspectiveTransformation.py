@@ -1,28 +1,21 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug  2 01:15:01 2021
-
-@author: limon
-"""
-
-
 import cv2
 import numpy as np
 
 class PerspectiveTransformation:
-    
+  
     def __init__(self):
- 
+
+        """Init PerspectiveTransformation."""
         self.src = np.float32([(550, 460),     # top-left
                                (150, 720),     # bottom-left
                                (1200, 720),    # bottom-right
                                (770, 460)])    # top-right
-        
+                               
         self.dst = np.float32([(100, 0),
                                (100, 720),
                                (1100, 720),
                                (1100, 0)])
-        
+
         self.M = cv2.getPerspectiveTransform(self.src, self.dst)
         self.M_inv = cv2.getPerspectiveTransform(self.dst, self.src)
 
