@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 filename = 'l2.mkv'
-#filename = 'I:/JumpWatts/Dataset/Bike lane/video/g3.mkv'
+#filename = 'video_path'
 file_size = (1920,1080) # Assumes 1920x1080 mp4
 scale_ratio = 1 # Option to scale to fraction of original size. 
 
